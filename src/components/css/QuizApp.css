@@ -1,0 +1,45 @@
+.Quiz-app {
+ width: 350px;
+ padding: 30px;
+ border-radius: 5px;
+ background-color: #fff;
+ box-shadow: 5px 5px 12px #d3d3d3;
+}
+
+.heading {
+ width: 100%;
+ color: var(--dark-bg);
+ text-align: center;
+ margin-bottom: 18px;
+}
+
+label {
+ color: var(--light-bg);
+ margin: 15px;
+ font-size: 18px;
+}
+
+input,
+button {
+ width: 100%;
+ border: none;
+ padding: 10px;
+ outline: none;
+ background: none;
+ font-size: 18px;
+ border-radius: 5px;
+ text-transform: capitalize;
+ border: 1px solid #d3d3d3;
+}
+
+.Quiz-app .start-btn {
+ color: #fff;
+ cursor: pointer;
+ margin-top: 10px;
+ background-color: var(--dark-bg);
+ transition: color 0.3s ease;
+}
+
+button:active {
+ transform: scale(0.96);
+}

@@ -1,0 +1,140 @@
+.Quiz {
+ width: 400px;
+ padding: 30px;
+ border-radius: 5px;
+ background-color: #fff;
+ box-shadow: 5px 5px 12px #d3d3d3;
+}
+
+.heading2 {
+ margin-bottom: 10px;
+ color: var(--dark-bg);
+}
+
+.question-no {
+ color: var(--light-bg);
+ font-size: 22px;
+ margin-bottom: 10px;
+}
+
+.question {
+ color: var(--dark-bg);
+ font-size: 20px;
+ margin-bottom: 10px;
+}
+
+.head-time {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.option-box {
+ list-style: none;
+ margin-bottom: 20px;
+}
+
+.option-box li {
+ margin: 5px;
+ padding: 5px;
+ cursor: pointer;
+ font-size: 18px;
+ text-align: center;
+ color: var(--dark-bg);
+ border-bottom: 1px solid #d3d3d3;
+ transition: color 0.3s ease;
+}
+
+/* #0e32559f */
+
+.option-box li:hover {
+ color: #fff;
+ font-weight: 500;
+ border-radius: 5px;
+ background-color: var(--light-bg);
+}
+
+
+.progress-bar {
+ width: 100%;
+ border-radius: 5px;
+ margin-bottom: 10px;
+ background-color: #d3d3d3;
+}
+
+.progress {
+ width: 10%;
+ height: 8px;
+ border-radius: 5px;
+ background-color: var(--light-bg);
+ transition: width 0.5s ease;
+ position: relative;
+}
+
+.progress::before {
+ content: "";
+ position: absolute;
+ top: -5px;
+ right: 0;
+ width: 18px;
+ height: 18px;
+ border-radius: 50%;
+ background-color: var(--light-bg);
+}
+
+.progress .progress-circle {
+ position: absolute;
+ top: 0;
+ right: 0;
+ color: var(--dark-bg);
+ font-size: 18px;
+ padding: 9px 4px 0 0;
+}
+
+.time {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.timer-progress-bar {
+ width: 100%;
+ height: 3px;
+ border-radius: 5px;
+ margin: 5px 0;
+ background-color: #d3d3d3;
+ position: relative;
+}
+
+.timer-progress {
+ width: 0;
+ height: 3px;
+ display: block;
+ border-radius: 5px;
+ transition: width 0.5s ease;
+ background-color: var(--light-bg);
+}
+
+
+.timer-progress-box {
+ font-size: 20px;
+ margin-left: 8px;
+ color: var(--dark-bg);
+}
+
+.less {
+ background-color: #e41212;
+}
+
+.feedback {
+ margin: 10px 0 10px 0;
+ font-weight: 500;
+}
+
+.feedback.correct-ans {
+ color: #4caf50;
+}
+
+.feedback.incorrect-ans {
+ color: #f44336;
+}
